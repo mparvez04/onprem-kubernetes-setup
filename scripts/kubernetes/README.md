@@ -35,37 +35,37 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 # kubectl version --client
 ```
 
-# Provisioning Self-signed CA and Generating Certificates
+## Provisioning Self-signed CA and Generating Certificates
 
 ```
 # bash kubernetes_cert.sh
 ```
 
-# Generating Kubernetes Configuration Files for Authentication
+## Generating Kubernetes Configuration Files for Authentication
 
 ```
-# bash kubernetes_config.sh
+## bash kubernetes_config.sh
 ```
 
-# Generating the Data Encryption Config and Key
+## Generating the Data Encryption Config and Key
 
 ```
-# bash kubernetes_encry.sh
+## bash kubernetes_encry.sh
 ```
 
-# Bootstrapping the etcd Cluster
+## Bootstrapping the etcd Cluster
 
 [Follow KodeKloud ETCD Doc](https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/07-bootstrapping-etcd.md)
 
-# Setup Kubernetes Control Plane, API Server, Scheduler and Load Balancer
+## Setup Kubernetes Control Plane, API Server, Scheduler and Load Balancer
 
 [Follow KodeKloud ControlPlane Doc](https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/08-bootstrapping-kubernetes-controllers.md)
 
-# CRI and CNI for worker nodes (controlplane01, controlplane02, node01, node02)
+## CRI and CNI for worker nodes (controlplane01, controlplane02, node01, node02)
 
 [Follow KodeKloud Worker Nodes Doc](https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/09-install-cri-workers.md)
 
-# Bootstrapping the Kubernetes Worker Nodes
+## Bootstrapping the Kubernetes Worker Nodes
 
 Already create certificate and kube config files using `kubernetes_cert.sh` and `kubernetes_config.sh`
 
@@ -93,7 +93,7 @@ sudo mkdir -p \
   /var/run/kubernetes
 ```
 
-# Setting up Kubelet
+## Setting up Kubelet
 
 ```
 {
@@ -108,7 +108,7 @@ sudo mkdir -p \
 }
 ```
 
-# CIDR ranges and cluster DNS address used within the cluster
+## CIDR ranges and cluster DNS address used within the cluster
 ```
 POD_CIDR=10.244.0.0/16
 SERVICE_CIDR=10.96.0.0/16
