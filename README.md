@@ -1,7 +1,7 @@
 # onprem-kubernetes-setup
 step by step setup for onprem kubernetes cluster in a secure enviroment
 
-# Install Multipass
+## Install Multipass
 run this command:
 
 ```# brew install multipass```
@@ -12,8 +12,11 @@ run this command to verify installation:
 
 ```# multipass -h```
 
-#  To increase the disk size of a Linux VM
-(!) From 5GB to 10GB
+## To deploy and delete VMS follow this ReadME link below:
+[VMs Setup for Kubernetes Cluster](scripts/README.md)
+
+##  To increase the disk size of a Linux VM
+⚠️ From 5GB to 10GB
 
 run this command to verify the size of the disk for VM `node01`:
 ```

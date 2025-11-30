@@ -39,7 +39,11 @@ run this below command to install iterm2:
 # brew install iterm2
 ```
 
-[!CAUTION] run the below script to delete VMs:
+## To build Kubernetes Cluster Follow this below README file:
+
+[Setup Kubernetes Cluster](kubernetes/README.md)
+
+⚠️ run the below script to delete VMs:
 
 ```
 bash ./multipass-delete-vms.sh
